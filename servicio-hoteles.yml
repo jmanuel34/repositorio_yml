@@ -13,5 +13,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${hConfig}:8761/eureka
+  instance:
+    hostname: ${host}   #dirección del host donde se hospedará el contenedor del servicio
 server:
   port: 7007
